@@ -1,1 +1,9 @@
-Commande ECHO activ‚e.
+1.) git init
+2.) git add .
+3.) git commit -m "First Commit"
+4.) git add "remote url"
+5.) git push -u main
+================================
+1.) git add .
+2.) git commit -m "Commentaire"
+3.) git push
