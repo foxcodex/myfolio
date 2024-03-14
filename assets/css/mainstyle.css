@@ -1,0 +1,85 @@
+
+/* ========== Globals parmetters ============ */
+*{
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #2a2185;
+    --white: #fff;
+    --grayWhite: #f5f5f5;
+    --gray: #999;
+    --black: #222;
+}
+
+/* ====== Here to define the parametters of the body */
+body{
+    min-height: 100vh;
+    /* Specifies the handling of overflow in the horizontal direction. */
+    width: 95%;
+    overflow-x: hidden;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+header{
+    border: 1px solid;
+    border-color: var(--black);
+    padding: 0px 5px 0px 5px;
+}
+
+/* Here the “navbar style” : */
+nav {
+    background-color: var(--blue);
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* ======== some style to the list element : ========= */
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    /* This allow us to arrange list items in a row, without using float */
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li:hover{
+    /* This allow ths to display the color on hover */
+    background-color: var(--white);}
+
+/* Create a style for the first level items */
+nav > ul > li > a{
+    color: #aaa;
+    /* background-color:#FF0; */
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+aside{
+    border: 1px solid var(--black);
+    width: 20%;
+    height: 500px;
+    float: left;
+}
+
+footer{
+    border: 1px solid var(--black);
+    text-align: center;
+    background-color: var(--blue);
+    color: #EEE;
+    padding: 20px;
+    width: 95%;
+    bottom: 0;
+    position: fixed;
+}
