@@ -16,8 +16,8 @@
     </head>
     <body>
         <figure>
-            <img src="images/happydog.jpg" style="border-radius: 100%;">
-            <figcaption>Myfolio</figcaption>
+            <img src="images/happydog.jpg" style="border-radius: 50%;">
+            <figcaption><h3>Happy Fox</h3></figcaption>
         </figure>
         <nav>
             <ul>
@@ -32,13 +32,63 @@
         <main>
             <aside>
             </aside>
-            
             <div class="div-pp">
                 <div class="div-header"></div>
             <div class="Row">
-                <div class="Column">C1</div>
-                <div class="Column">C2</div>
-                <div class="Column">C3</div>
+                <div class="Column">
+                    <header><h3>Day video</h3></header><br>
+                    <figure>
+                        
+                        <video controls width="100%">
+                            <source src="public/video/flower.webm" type="video/webm"/>
+                        </video>
+                    </figure>
+                </div>
+                <!-- Here for audio file -->
+                <div class="Column">
+                    <header><h3>My collection</h3></header><br>
+                    <figure>
+                        <figcaption>All of me :</figcaption>
+                        <audio controls>
+                            <source src="public/audio/George Benson All of me.mp3" type="audio/mpeg">
+                    </audio>
+                    </figure><br>
+                    <figure>
+                        <figcaption>My funny valentine :</figcaption>
+                        <audio controls>
+                            <source src="public/audio/Sting My Funny Valentine feat Herbie Hancock.mp3" type="audio/mpeg">
+                    </audio>
+                    </figure><br>
+                    <figure>
+                        <figcaption>Desafinado :</figcaption>
+                        <audio controls>
+                            <source src="public/audio/Desafinado Stringspace.mp3" type="audio/mpeg">
+                    </audio>
+                    </figure>
+                    
+                </div>
+                <div class="Column">
+                    <header><h3>Contact me</h3></header><br>
+                    <form>
+                        <label>Your name :</label><br/>
+                        <input type="text" name="firstName"/><br><br>
+                        <label>Birth Date :</label><br/>
+                        <input type="date" name="birthday"><br><br>
+                        <label>Email :</label><br>
+                        <input type="email" name="email" placeholder="contact@domain.com"/><br><br>
+                        <label>Your programming language :</label><br>
+                        <select name="planguage" style="width: 200px;">
+                            <option></option>
+                            <option value="lhtml">HTML</option>
+                            <option value="ljavascript">JAVASCRIT</option>
+                            <option value="lphp">PHP</option>
+                            <option value="python">PYTHON</option>
+                            <option value="ljava">JAVA</option>
+                        </select><br><br><hr><br>
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </form>    
+                </div>
             </div>
             </div>
 

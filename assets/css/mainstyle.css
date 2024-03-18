@@ -32,8 +32,10 @@ body{
 
 header{
     border: 1px solid;
+    color: var(--blue);
     border-color: var(--blue);
     padding: 0px 5px 0px 5px;
+    text-align: center;
 }
 
 /* Here the “navbar style” : */
@@ -147,6 +149,7 @@ figure{
     border: 1px solid;
     border-color: var(--blue);
     height: 350px;
+    padding: 5px 2px 3px 5px;
 }
 
 .div-header{
@@ -166,10 +169,14 @@ figure{
     margin-left: 5%;
 }
 
-.div-mid{
+/* .div-mid{
     border: 1px solid var(--blue);
     width: 25%;
     height: 350px;
     margin-top: 15px;
     float: left;
-}
+} */
+
+audio{
+    width: 100%;
+  }
