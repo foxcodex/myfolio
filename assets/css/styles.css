@@ -1,11 +1,12 @@
-/* ========== Globals parmetters ============ */
-@import url('https://fonts.googleapis.com/css3?familly=Ubuntu:wght@300;400;500;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap') */
-/* ========== Globals parmetters ============ */
+@import url('https://fonts.googleapis.com/css3?familly=Roboto:wght@300;400;500;700&display=swap');
+/* (*) indicates the universal selector */
 *{
-    font-family: "Ubuntu", sans-serif;
-    margin: 0;
-    padding: 0;
+    /* I set the font style to Roboto here */
+    font-family: 'Roboto';
+    font-size: medium;
+    /* I remove the margin and padding */
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -15,6 +16,9 @@
     --grayWhite: #f5f5f5;
     --gray: #999;
     --black: #222;
+    --cyan: lightcyan;
+    --bwood: burlywood;
+    --green: green;
 }
 
 /* ====== Here to define the parametters of the body */
@@ -31,22 +35,53 @@ body{
 }
 
 header{
-    border: 1px solid;
-    color: var(--blue);
-    border-color: var(--blue);
-    padding: 0px 5px 0px 5px;
-    text-align: center;
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--blue);
+    margin-top: 2px;
+    margin-bottom: 5px;
+    line-height: 90px;
+}
+
+#logo-div{
+    width: 50%;
+    min-height: 90px;
+    float: left;
+    line-height: 100px;
+    padding-left: 2%;
+    color: var(--white);
+    margin-top: 5px;
+}
+
+#logo-img{
+    padding-top: 0px;
+    width: 85px;
+    min-height: 85px;
+    border-radius: 50%;
+    line-height: 85px;
 }
 
 /* Here the “navbar style” : */
 nav {
-    background-color: var(--blue);
+    width: 50%;
+    min-height: 90px;
+    float: right;
+    line-height: 90px;
+    color: var(--white);
+    /* text-align: center; */
+
+    /* background-color: var(--blue);
     margin: 0;
     overflow: hidden;
     transition: 0.5s;
     border: solid var(--blue);
-    text-align: center;
-    overflow: hidden;
+    overflow: hidden; */
+}
+
+.clearfix ::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 /* ======== some style to the list element : ========= */
@@ -83,6 +118,16 @@ nav ul li:hover{
     color: var(--blue);
 }
 
+#header-banner-div{
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--cyan);
+    border: 1px solid var(--black);
+    text-align: center; 
+    line-height: 100px;
+    margin-bottom: 5px;
+}
+
 main{
     border: 1px solid var(--black);
     width: 100%;
@@ -97,29 +142,6 @@ aside{
     height: 500px;
     float: left;
 }
-
-/* footer{
-    flex-shrink: 0;
-    border: 1px solid var(--black);
-    text-align: center;
-    background-color: var(--blue);
-    color: #EEE;
-    padding: 20px;
-    width: 95%;
-    bottom: 0;
-    position: fixed;
-} */
-
-footer {
-    flex-shrink: 0;
-    border-top: 1px dashed #000;
-    /* height: 20px; */
-    width: 100%;
-    background-color: var(--blue);
-    color: #EEE;
-    width: 100%;
-    text-align: center;
-  }
 
 figure{
     border: 1px solid black; 
@@ -161,7 +183,7 @@ figure{
     margin-left: 5%;
 }
 
-.div-left{
+div-left{
     border: 1px solid var(--blue);
     width: 25%;
     height: 350px;
@@ -169,6 +191,13 @@ figure{
     margin-left: 5%;
 }
 
+p{
+    border: 1px solid;
+    color: var(--blue);
+    border-color: var(--blue);
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+}
 /* .div-mid{
     border: 1px solid var(--blue);
     width: 25%;
@@ -180,3 +209,23 @@ figure{
 audio{
     width: 100%;
   }
+
+  footer{
+    width: 100%;
+    min-height: 50px;
+    background-color: var(--gray);
+    border: 1px solid var(--black);
+    text-align: center;
+    line-height: 50px;
+}
+/* 
+footer {
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+    /* height: 20px; 
+    width: 100%;
+    background-color: var(--blue);
+    color: #EEE;
+    width: 100%;
+    text-align: center;
+  } */

@@ -11,118 +11,107 @@
         <title>My folio</title>
         <!-- The base URL of the site -->
         <!-- <base href="http://myfolio.org"/> -->
-        <!-- Link to the style sheet -->
-        <link rel="stylesheet" href="assets/css/mainstyle.css">
+        <!-- The css file is linked to our HTML project. -->
+        <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <body>
-        <figure>
-            <img src="images/happydog.jpg" style="border-radius: 50%;">
-            <figcaption><h3>Happy Fox</h3></figcaption>
+        <header class="clearfix">
+            <div id="logo-div">
+                    <img id="logo-img" src="images/happydog.jpg">
+            </div>
+            <nav>
+                <ul>
+                  <li><a href="#"> HOME </a></li>
+                  <li><a href="#"> ABOUT</a></li>
+                  <li><a href="#"> WORK </a></li>
+                  <li><a href="#">RESUME</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+         <!-- Banner div -->
+        <div id="header-banner-div">
+            Welcome to my site
+        </div>
+    <main>
+        <aside style="padding-top: 5px;">
+          <!-- Embeded video from youtube -->
+          <figure style="margin-left: 2px; margin-right: 2px;">
+            <iframe width="98%" height="200" src="https://www.youtube.com/embed/PJpoT9RncJQ?si=yv9Vu7kZlsTDKMtS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+          </figure><br><hr><br>
+        <!-- Embeded map from google -->
+        <figure style="margin-left: 2px; margin-right: 2px;">
+            <figcaption>Join us</figcaption>
+            <iframe title="In line iframe" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.805614049461!2d-3.9885815256477213!3d5.293003894685279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1eeab6f750ae9%3A0x31100dc61763723!2sECOLE%20DE%20COMMERCE%20ET%20DE%20GESTION%20(ECG)!5e0!3m2!1sen!2sci!4v1710785003566!5m2!1sen!2sci"
+                width="98%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </figure>
-        <nav>
-            <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">WORK</a></li>
-              <li><a href="#">RESUME</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
-        
-        <main>
-            <aside style="padding-top: 5px;">
-                <!-- Embeded video from youtube -->
-                <figure style="margin-left: 2px; margin-right: 2px;">
-                <iframe width="98%" height="200" src="https://www.youtube.com/embed/PJpoT9RncJQ?si=yv9Vu7kZlsTDKMtS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                </iframe>
-            </figure><br><hr><br>
-            <!-- Embeded map from google -->
-            <figure style="margin-left: 2px; margin-right: 2px;">
-                <figcaption>Join us</figcaption>
-                <iframe title="In line iframe" 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.805614049461!2d-3.9885815256477213!3d5.293003894685279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1eeab6f750ae9%3A0x31100dc61763723!2sECOLE%20DE%20COMMERCE%20ET%20DE%20GESTION%20(ECG)!5e0!3m2!1sen!2sci!4v1710785003566!5m2!1sen!2sci"
-                    width="98%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </figure>
-            </aside>
-            <div class="div-pp">
-                <div class="div-header"></div>
-            <div class="Row">
-                <div class="Column">
-                    <header><h3>Day video</h3></header><br>
-                    <figure>
-                        
-                        <video controls width="100%">
-                            <source src="public/video/flower.webm" type="video/webm"/>
-                        </video>
-                    </figure>
-                </div>
-                <!-- Here for audio file -->
-                <div class="Column">
-                    <header><h3>My collection</h3></header><br>
-                    <figure>
-                        <figcaption>All of me :</figcaption>
-                        <audio controls>
-                            <source src="public/audio/George Benson All of me.mp3" type="audio/mpeg">
-                    </audio>
-                    </figure><br>
-                    <figure>
-                        <figcaption>My funny valentine :</figcaption>
-                        <audio controls>
-                            <source src="public/audio/Sting My Funny Valentine feat Herbie Hancock.mp3" type="audio/mpeg">
-                    </audio>
-                    </figure><br>
-                    <figure>
-                        <figcaption>Desafinado :</figcaption>
-                        <audio controls>
-                            <source src="public/audio/Desafinado Stringspace.mp3" type="audio/mpeg">
-                    </audio>
-                    </figure>
+        </aside>
+
+        <div class="div-pp">
+            <div class="div-header"></div>
+        <div class="Row">
+            <div class="Column">
+                <p><h3>Day video</h3></p><br>
+                <figure>
                     
-                </div>
-                <div class="Column">
-                    <header><h3>Contact me</h3></header><br>
-                    <form>
-                        <label>Your name :</label><br/>
-                        <input type="text" name="firstName"/><br><br>
-                        <label>Birth Date :</label><br/>
-                        <input type="date" name="birthday"><br><br>
-                        <label>Email :</label><br>
-                        <input type="email" name="email" placeholder="contact@domain.com"/><br><br>
-                        <label>Your programming language :</label><br>
-                        <select name="planguage" style="width: 200px;">
-                            <option></option>
-                            <option value="lhtml">HTML</option>
-                            <option value="ljavascript">JAVASCRIT</option>
-                            <option value="lphp">PHP</option>
-                            <option value="python">PYTHON</option>
-                            <option value="ljava">JAVA</option>
-                        </select><br><br><hr><br>
-                        <button type="reset">Reset</button>
-                        <button type="submit">Submit</button>
-                    </form>    
-                </div>
+                    <video controls width="100%">
+                        <source src="public/video/flower.webm" type="video/webm"/>
+                    </video>
+                </figure>
             </div>
+            <!-- Here for audio file -->
+            <div class="Column">
+                <p><h3>My collection</h3></p><br>
+                <figure>
+                    <figcaption>All of me :</figcaption>
+                    <audio controls>
+                        <source src="public/audio/George Benson All of me.mp3" type="audio/mpeg">
+                </audio>
+                </figure><br>
+                <figure>
+                    <figcaption>My funny valentine :</figcaption>
+                    <audio controls>
+                        <source src="public/audio/Sting My Funny Valentine feat Herbie Hancock.mp3" type="audio/mpeg">
+                </audio>
+                </figure><br>
+                <figure>
+                    <figcaption>Desafinado :</figcaption>
+                    <audio controls>
+                        <source src="public/audio/Desafinado Stringspace.mp3" type="audio/mpeg">
+                </audio>
+                </figure>
+                
             </div>
-
-            <!-- <div class="div-pp">
-                <div class="div-header"></div>    
-                <div class="div-left"></div>
-            </div> -->
-
-            
-        </main>
-
+            <div class="Column">
+                <p><h3>Contact me</h3></p><br>
+                <form>
+                    <label>Your name :</label><br/>
+                    <input type="text" name="firstName"/><br><br>
+                    <label>Birth Date :</label><br/>
+                    <input type="date" name="birthday"><br><br>
+                    <label>Email :</label><br>
+                    <input type="email" name="email" placeholder="contact@domain.com"/><br><br>
+                    <label>Your programming language :</label><br>
+                    <select name="planguage" style="width: 200px;">
+                        <option></option>
+                        <option value="lhtml">HTML</option>
+                        <option value="ljavascript">JAVASCRIT</option>
+                        <option value="lphp">PHP</option>
+                        <option value="python">PYTHON</option>
+                        <option value="ljava">JAVA</option>
+                    </select><br><br><hr><br>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </form>    
+            </div>
+        </div>
+        </div>
+    </main>
         <footer>
             <p>Copyright @foxfolio <a href="mailto:harrisonkouame@gmail.com">Mike Harrison</a></p>
         </footer>
-
-        <!-- ==== icons to be add later ==== -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-        <!-- Javascript files == To be add later -->
-        <!-- <script src="assets/js/mainjs.js" type="script"></script> -->
-
+      
     </body>
-</html>
