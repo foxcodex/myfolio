@@ -45,7 +45,7 @@ header{
 
 #logo-div{
     width: 50%;
-    min-height: 90px;
+    min-height: 85px;
     float: left;
     line-height: 100px;
     padding-left: 2%;
@@ -59,8 +59,14 @@ header{
     min-height: 85px;
     border-radius: 50%;
     line-height: 85px;
+    float: left;
 }
 
+#img-caption{
+    color: var(--cyan);
+    float: left;
+    padding-top: -5px;
+}
 /* Here the “navbar style” : */
 nav {
     width: 50%;
@@ -198,6 +204,8 @@ p{
     padding: 0px 5px 0px 5px;
     text-align: center;
 }
+
+
 /* .div-mid{
     border: 1px solid var(--blue);
     width: 25%;
@@ -209,6 +217,35 @@ p{
 audio{
     width: 100%;
   }
+
+  /* FIGURE for image */
+  .figure {
+    /* float: right; */
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+    font-stretch: expanded;
+    color: aqua;
+    text-indent: 0;
+    /* border: thin silver solid; */
+    border: none;
+    margin: 0.3em;
+    padding: 0.3em;
+  }
+
+  figcaption.scaled{
+    margin-top: -85px;
+    margin-bottom: -40px;
+  }
+
+  img.scaled {
+    width: 80%;
+    border-radius: 50%;
+  }
+
+
 
   footer{
     width: 100%;
